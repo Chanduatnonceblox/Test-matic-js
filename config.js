@@ -11,8 +11,8 @@ if (env.error) {
 module.exports = {
   rpc: {
     pos: {
-      parent: process.env.GOERLI_ROOT_RPC,
-      child: process.env.MATIC_RPC || 'https://rpc-mumbai.matic.today',
+      parent: process.env.GOERLI_ROOT_RPC,// `https://goerli.infura.io/v3/${process.env.INFURA_GOERLI_PROJECT_ID}`,
+      child: process.env.MATIC_RPC  //`https://polygon-mumbai.infura.io/v3/${process.env.INFURA_POLYGON_PROJECT_ID}`,
     },
     zkEvm: {
       parent: process.env.GOERLI_ROOT_RPC,

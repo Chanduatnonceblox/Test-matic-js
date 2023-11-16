@@ -1,0 +1,20 @@
+{
+  "name": "test-matic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@maticnetwork/maticjs": "^3.6.7",
+    "@maticnetwork/maticjs-web3": "^1.0.4",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "bn.js": "^5.2.1",
+    "ethers": "^5.7.1",
+    "prompt-sync": "^4.2.0",
+    "web3": "^4.2.2"
+  }
+}

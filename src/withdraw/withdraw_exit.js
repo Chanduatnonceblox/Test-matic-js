@@ -8,7 +8,6 @@ const execute = async () => {
   const hash = prompt(`Enter burn transaction hash: `);
   if (type == "erc721") {
     
-
     const erc721Token = client.erc721(pos.parent.erc721, true);
     const result = await erc721Token.withdrawExit(hash);
     const txHash = await result.getTransactionHash();
@@ -34,8 +33,11 @@ const execute = async () => {
     console.log("txHash", txHash);
     const receipt = await result.getReceipt();
     console.log("receipt", receipt);
+  }else if(type=="check"){
+    const result = await client.isCheckPointed(hash);
+    console.log("result ",result)
   }else{
-    console.log("Invalid type of standard ")
+    console.log("Invalid Type")
   }
 
 };
